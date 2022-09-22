@@ -3,7 +3,7 @@ autoinstall:
   version: 1
   locale: en_US
   keyboard:
-    layout: uk
+    layout: gb
   ssh:
     install-server: true
     allow-pw: true
@@ -29,5 +29,5 @@ autoinstall:
         shell: /bin/bash
         # passwd: your-password
         # - or -
-        # ssh_authorized_keys:
-        #   - your-ssh-key
+        ssh_authorized_keys:
+          - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBJpVWYmXPpqVmlHdixDR//vdfD+sryvYmpH2Dj1/Otx
