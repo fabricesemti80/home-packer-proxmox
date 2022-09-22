@@ -25,7 +25,7 @@ source "proxmox" "ubuntu-server-focal" {
     insecure_skip_tls_verify = true
     # VM General Settings
     node = "proxmox01"
-    vm_id = "100"
+    vm_id = "202"
     vm_name = "ubuntu-server-focal"
     template_description = "Ubuntu Server Focal Image"
 
