@@ -37,3 +37,5 @@ These contain the instructions for the build. Most are straight-forward, I only 
 ## Refernces
 
 <https://youtu.be/1nf3WOEFq1Y>
+
+<https://docs.powerhost.io/?docs=proxmox-cloud-init-template-guide>
