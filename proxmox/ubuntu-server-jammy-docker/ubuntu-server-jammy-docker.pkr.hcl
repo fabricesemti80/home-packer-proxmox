@@ -86,7 +86,7 @@ source "proxmox" "ubuntu-server-jammy" {
     # PACKER Autoinstall Settings
     http_directory = "http"
     # (Optional) Bind IP Address and Port
-    http_bind_address = "192.168.2.39" # "0.0.0.0" # ? ip from ifconfig
+    http_bind_address = "10.0.0.4" # "0.0.0.0" # ? ip from ifconfig
     http_port_min = 8802
     http_port_max = 8802
 
