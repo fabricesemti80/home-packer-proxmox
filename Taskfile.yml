@@ -1,0 +1,56 @@
+version: '3'
+
+tasks:
+  init:focal:
+    desc: Initialize Ubuntu Focal template
+    dir: ubuntu-server-focal
+    cmds:
+    - packer init ubuntu-server-focal.pkr.hcl
+
+  fmt:focal:
+    desc: Format Ubuntu Focal template
+    dir: ubuntu-server-focal
+    cmds:
+    - packer fmt ubuntu-server-focal.pkr.hcl
+
+  validate:focal:
+    desc: Validate Ubuntu Focal template
+    dir: ubuntu-server-focal
+    cmds:
+    - packer validate ubuntu-server-focal.pkr.hcl
+
+  build:focal:
+    desc: Build Ubuntu Focal template
+    dir: ubuntu-server-focal
+    cmds:
+    - packer build ubuntu-server-focal.pkr.hcl
+
+  # Docker variant tasks
+  init:focal-docker:
+    desc: Initialize Ubuntu Focal Docker template
+    dir: ubuntu-server-focal-docker
+    cmds:
+    - packer init ubuntu-server-focal-docker.pkr.hcl
+
+  fmt:focal-docker:
+    desc: Format Ubuntu Focal Docker template
+    dir: ubuntu-server-focal-docker
+    cmds:
+    - packer fmt ubuntu-server-focal-docker.pkr.hcl
+
+  validate:focal-docker:
+    desc: Validate Ubuntu Focal Docker template
+    dir: ubuntu-server-focal-docker
+    cmds:
+    - packer validate ubuntu-server-focal-docker.pkr.hcl
+
+  build:focal-docker:
+    desc: Build Ubuntu Focal Docker template
+    dir: ubuntu-server-focal-docker
+    cmds:
+    - packer build ubuntu-server-focal-docker.pkr.hcl
+
+  default:
+    desc: Display available tasks
+    cmds:
+    - task --list
