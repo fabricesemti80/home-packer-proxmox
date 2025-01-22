@@ -24,8 +24,8 @@ source "proxmox" "ubuntu-server-focal" {
     # (Optional) Skip TLS Verification
     insecure_skip_tls_verify = true
     # VM General Settings
-    node = "proxmox01"
-    vm_id = "203"
+    node = "pve-0"
+    vm_id = "5003"
     vm_name = "ubuntu-server-focal-docker"
     template_description = "Ubuntu Server Focal Image"
 
